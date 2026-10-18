@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { 
-  Building2, Box, Filter, Download, ArrowUpRight, 
-  CheckCircle2, Clock, Truck, AlertCircle, RefreshCw, Printer 
+import {
+  Building2, Box, Filter, Download, ArrowUpRight,
+  CheckCircle2, Clock, Truck, AlertCircle, RefreshCw, Printer
 } from "lucide-react";
 import { INITIAL_AGENCIES } from "../data/sampleGarments";
 
@@ -43,7 +43,7 @@ export default function AgencyPortal({ inventory = [], onPrintItem }) {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8 py-6">
-      
+
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <div>
@@ -74,11 +74,10 @@ export default function AgencyPortal({ inventory = [], onPrintItem }) {
           <div key={agency.id} className="glass-card p-5 relative overflow-hidden flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-2">
-                <span className={`text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded-full border ${
-                  agency.currentNeed === "Critical"
+                <span className={`text-[10px] font-mono font-bold uppercase px-2 py-0.5 rounded-full border ${agency.currentNeed === "Critical"
                     ? "bg-red-500/15 border-red-500/30 text-red-300"
                     : "bg-emerald-500/15 border-emerald-500/30 text-emerald-300"
-                }`}>
+                  }`}>
                   {agency.currentNeed} Need
                 </span>
                 <span className="text-xs font-mono text-slate-400 font-bold">
@@ -112,7 +111,8 @@ export default function AgencyPortal({ inventory = [], onPrintItem }) {
 
       {/* Inventory Table Container */}
       <div className="glass-card p-6">
-        
+
+
         {/* Table Filters & Count */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-emerald-500/15">
           <div className="flex items-center gap-2">
@@ -125,6 +125,7 @@ export default function AgencyPortal({ inventory = [], onPrintItem }) {
           <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0">
             <Filter className="w-3.5 h-3.5 text-slate-400 shrink-0" />
             {[
+
               { id: "all", label: "All Items" },
               { id: "crisis", label: "Crisis Shelter" },
               { id: "career", label: "Career Closet" },
@@ -132,13 +133,13 @@ export default function AgencyPortal({ inventory = [], onPrintItem }) {
               { id: "recycle", label: "Recyclers" },
             ].map((f) => (
               <button
+
                 key={f.id}
                 onClick={() => setSelectedFilter(f.id)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${
-                  selectedFilter === f.id
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold whitespace-nowrap transition-all ${selectedFilter === f.id
                     ? "bg-emerald-500/20 text-emerald-300 border border-emerald-400/40"
                     : "text-slate-400 hover:text-white hover:bg-white/5"
-                }`}
+                  }`}
               >
                 {f.label}
               </button>
