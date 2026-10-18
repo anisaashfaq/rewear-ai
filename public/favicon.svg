@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <defs>
+    <linearGradient id="leafGrad" x1="4" y1="4" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0" y1="0" x2="48" y2="48" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#065f46" />
+    </linearGradient>
+  </defs>
+  <!-- Background Circle with subtle glow -->
+  <rect width="48" height="48" rx="12" fill="#064e3b" />
+  <!-- Circular Recycle Swirl Arrows -->
+  <path d="M14 18 C14 12, 22 10, 28 12 L26 15 M28 12 L30 8" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M34 30 C34 36, 26 38, 20 36 L22 33 M20 36 L18 40" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Stylized Coat Hanger -->
+  <path d="M24 16 C25.5 16, 27 17.5, 26 19.5 C25 21, 24 22, 24 23.5" stroke="#f0fdf4" stroke-width="2" stroke-linecap="round"/>
+  <path d="M24 23.5 L13 29 C12 29.5, 12 30.5, 13.5 30.5 L34.5 30.5 C36 30.5, 36 29.5, 35 29 L24 23.5 Z" stroke="#f0fdf4" stroke-width="2" stroke-linejoin="round" fill="none"/>
+  <!-- AI Sparkle -->
+  <path d="M36 14 L37 17 L40 18 L37 19 L36 22 L35 19 L32 18 L35 17 Z" fill="#fbbf24"/>
+</svg>
